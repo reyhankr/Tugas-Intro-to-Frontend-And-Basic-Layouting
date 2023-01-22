@@ -1,8 +1,8 @@
 # Tugas-Intro-to-Frontend-And-Basic-Layouting
 
-Nama      : Reyhan Kharisma Ramadhan
-NIM       : 16622376
-ID GDSC   : 220020098
+<p> Nama      : Reyhan Kharisma Ramadhan</p>
+<p> NIM       : 16622376</p>
+<p> ID GDSC   : 220020098</p>
 
 <p align="justify"> Repository ini merupakan pengumpulan tugas pada kelas "Intro to Frontend & Basic Layouting" yang dilaksanakan pada 20 Januari 2023.
 Adapun isi dari file README.md ini yang akan menjelaskan tentang deskripsi program. </p>
