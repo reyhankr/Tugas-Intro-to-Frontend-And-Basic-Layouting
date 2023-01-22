@@ -1,0 +1,188 @@
+body{
+    background-color: #C2DFFF;
+    background-size: 100% 100%;
+    margin: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#judul{
+    font-size: 40pt;
+    font-family: Arial;
+    text-align: center;
+}
+
+.menu{
+    font-family: Arial;
+    font-weight: bold;
+    height: 70px;
+    width: 100%;
+    background: black;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+label{
+    font-family: Arial;
+    font-size: 20pt;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    float: left;
+}
+
+.menu ul{
+    margin: 0px;
+    padding: 5px;
+    background: none;
+    display: block;
+    float: right;
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #ddd;
+}
+
+.menu ul li a:hover{
+    display: block;
+    color: #C2DFFF;
+    background: #222;
+    box-shadow: inset 0px 0px 5px #000;
+}
+
+.menu ul li .dropdown{
+    display: none;
+}
+
+.menu ul li:hover .dropdown{
+    display: block;
+    background: black;
+    position: absolute;
+    padding: 10px;
+}
+
+.menu ul li:hover .dropdown li{
+    display: block;
+}
+
+.menu ul li:hover .dropdown li a{
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.menu ul li:hover .dropdown li a:hover{
+    background: #222;
+    box-shadow: inset 0px 0px 5px #000;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px 20px;
+    grid-column-gap: 50px;
+    grid-row-gap: 30px;
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.item img:hover{
+    transform: scale(1.04);
+}
+
+.item h4{
+    font-family: Arial;
+    font-size: 20pt;
+    padding: 5px;
+    text-align: center;
+}
+
+.item button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all;
+}
+
+.item button a{
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+}
+
+.item button:hover{
+    transform: scale(1.04);
+}
+
+.container{
+    width: 960px;
+    margin: 50px auto;
+    background-color: #fff;
+}
+
+.container .header ul li{
+    font-size: 17px;
+}
+
+.header{
+    font-size: 20pt;
+    padding: 50px;
+}
+
+.header p{
+    text-align: justify;
+    font-size: 13pt;
+    margin-top: 10px;
+}
+
+.gambar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    margin: auto;
+    height: 400px;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+}
+
+hr{
+    border-top: 5px solid black;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .items{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .items{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
